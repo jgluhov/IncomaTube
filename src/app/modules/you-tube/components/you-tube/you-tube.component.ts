@@ -11,7 +11,9 @@ export class YouTubeComponent implements OnInit {
   constructor(public youTubeService: YouTubeService) {}
 
   ngOnInit() {
-    this.youTubeService.getVideos();
+    this.youTubeService.getVideos().subscribe((videos) => {
+      console.log(videos);
+    });
   }
 
 }

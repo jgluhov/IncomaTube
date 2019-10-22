@@ -3,14 +3,15 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { YouTubeComponent } from './modules/you-tube/components/you-tube/you-tube.component';
+import { YouTubeModule } from '@you-tube/you-tube.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    YouTubeComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    YouTubeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
