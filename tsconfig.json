@@ -17,7 +17,15 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "@you-tube": [
+        "./src/app/modules/you-tube"
+      ],
+      "@you-tube/*": [
+        "./src/app/modules/you-tube/*"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
